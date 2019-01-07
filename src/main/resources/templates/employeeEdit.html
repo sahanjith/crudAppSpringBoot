@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Employees</title>
+
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/bootstrap-theme.css" th:href="@{/css/bootstrap.min.css}" />
+
+    <script type="text/javascript" th:src="@{/js/jquery.min.js}" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}" src="../static/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Employees</h1>
+
+        <form class="form-group" action="/employeeEdit" th:action="@{/employeeEdit}" method="post">
+            <input th:type="hidden" name="id" th:field="${employee.id}" />
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" th:field="${employee.firstName}" />
+            </div>
+            <div class="form-group">
+                <label for="lastName">Content</label>
+                <input type="text" class="form-control" id="lastName" th:field="${employee.lastName}" />
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a href="#" th:href="@{/}" class="btn btn-danger" role="button">Cancel</a>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

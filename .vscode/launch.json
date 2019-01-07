@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CrudAppSpringbootHsqlApplication",
+            "request": "launch",
+            "mainClass": "com.noetic.Assignment.crudApp.crudAppspringboothsql.CrudAppSpringbootHsqlApplication",
+            "projectName": "crudApp-springboot-hsql"
+        }
+    ]
+}
